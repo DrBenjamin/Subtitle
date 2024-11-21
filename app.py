@@ -14,4 +14,6 @@ if uploaded_files:
         st.error(f"Error: {e}")
         
 # Converting example.srt into output.vtt
-srt_to_vtt(path_to_my_srt_file, path_to_converted_vtt_file)
+vtt_file = srt_to_vtt(path_to_my_srt_file, path_to_converted_vtt_file)
+
+st.download_button(vtt_file, "Download VTT-Datei", "Click here to download your file", "vtt")
