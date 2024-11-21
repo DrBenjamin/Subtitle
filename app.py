@@ -8,7 +8,7 @@ uploaded_file = st.file_uploader("Datei hochladen", accept_multiple_files=False,
 if uploaded_file:
     try:
         buffer = io.StringIO()
-        srt_to_vtt(uploaded_file, buffer)
+        srt_to_vtt(uploaded_file.read(), buffer)
         content = buffer.getvalue()
         st.success("Datei(en) erfolgreich konvertiert.")
         st.download_button(
