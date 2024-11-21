@@ -1,4 +1,4 @@
-import streamlit as streamlit
+import streamlit as st
 from srt_to_vtt import srt_to_vtt
 
 path_to_my_srt_file = "example.srt"
