@@ -1,0 +1,91 @@
+1
+00:00:00,110 --> 00:00:02,853
+Wir sehen bereits den Aufruf des Pflege
+
+2
+00:00:02,853 --> 00:00:04,813
+Assessments, um das Assessment zu
+
+3
+00:00:04,813 --> 00:00:06,773
+starten. Wählen Sie E Pakets
+
+4
+00:00:06,773 --> 00:00:08,732
+Blitzeinschätzung am linken Rand sehen
+
+5
+00:00:08,732 --> 00:00:10,300
+Sie die verschiedenen Lebensaktivitäten.
+
+6
+00:00:14,540 --> 00:00:17,280
+Um diese Bearbeiten zu können, wählen
+
+7
+00:00:17,280 --> 00:00:20,020
+Sie aus der Aktionsleiste bearbeiten. Der
+
+8
+00:00:20,020 --> 00:00:21,390
+Bearbeitungsmodus ist aktiviert.
+
+9
+00:00:24,850 --> 00:00:26,983
+Sie können die vorhandenen Daten
+
+10
+00:00:26,983 --> 00:00:27,410
+hinterlegen.
+
+11
+00:00:47,600 --> 00:01:07,600
+
+
+12
+00:01:07,760 --> 00:01:27,760
+
+
+13
+00:01:35,940 --> 00:01:37,882
+Wenn sie für die jeweilige
+
+14
+00:01:37,882 --> 00:01:39,825
+Lebensaktivität alle Daten erfasst haben,
+
+15
+00:01:39,825 --> 00:01:42,587
+speichern Sie diese. Entweder speichern
+
+16
+00:01:42,587 --> 00:01:45,307
+und geht zum nächsten, dann springen sie
+
+17
+00:01:45,307 --> 00:01:47,250
+direkt in die nächste Lebensaktivität.
+
+18
+00:01:48,730 --> 00:01:51,494
+Verwerfen wenn Sie feststellen, es ist
+
+19
+00:01:51,494 --> 00:01:53,798
+beispielsweise der falsche Patient. Wir
+
+20
+00:01:53,798 --> 00:01:56,563
+wählen speichern, der grüne Balken zur
+
+21
+00:01:56,563 --> 00:01:57,945
+befüllten Lebensaktivität allgemeine
+
+22
+00:01:57,945 --> 00:02:00,249
+Informationen sagt aus, dass Daten
+
+23
+00:02:00,249 --> 00:02:01,170
+hinterlegt sind.
