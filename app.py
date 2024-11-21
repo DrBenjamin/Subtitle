@@ -1,18 +1,15 @@
 import streamlit as st
+import io
 from srt_to_vtt import srt_to_vtt
 
-path_to_my_srt_file = "example.srt"
-path_to_converted_vtt_file = "output.vtt"
-
-# Title
 st.title("Untertitel Konverter")
-uploaded_files = st.file_uploader("Datei(en) hochladen", accept_multiple_files=True, type='srt')
-if uploaded_files:
+st.write("Dieses Tool konvertiert `srt` Untertitel Dateien in das `vtt` Format.")
+uploaded_file = st.file_uploader("Datei hochladen", accept_multiple_files=False, type='srt')
+if uploaded_file:
     try:
-        # Converting example.srt into output.vtt
-        srt_to_vtt(path_to_my_srt_file, path_to_converted_vtt_file)
-        with open('output.vtt', 'r') as file:
-            content = file.read()
+        buffer = io.StringIO()
+        srt_to_vtt(uploaded_file, buffer)
+        content = buffer.getvalue()
         st.success("Datei(en) erfolgreich konvertiert.")
         st.download_button(
             label="Download Untertitel",
@@ -21,5 +18,5 @@ if uploaded_files:
             mime="text/vtt",
         )
 
-    except S3Error as e:
+    except Exception as e:
         st.error(f"Error: {e}")
