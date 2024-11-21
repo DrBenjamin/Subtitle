@@ -12,7 +12,12 @@ if uploaded_files:
         # Converting example.srt into output.vtt
         srt_to_vtt(path_to_my_srt_file, path_to_converted_vtt_file)
         st.success("Datei(en) erfolgreich konvertiert.")
-        st.download_button(path_to_converted_vtt_file)
+        st.download_button(
+            label="Download Untertitel",
+            data=path_to_converted_vtt_file,
+            file_name="Untertitel.vtt",
+            mime="text/vtt",
+        )
 
     except S3Error as e:
         st.error(f"Error: {e}")
