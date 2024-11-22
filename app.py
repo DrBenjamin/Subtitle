@@ -11,8 +11,12 @@ def srt_to_vtt(srt_file):
             line = line.replace(",", ".")
         buffer_vtt.write(line)
     return buffer_vtt
-            
+
+# Title
 st.title("Untertitel Konverter")
+
+# Subtitle
+st.subheader("Konvertiere srt in vtt")
 st.write("Dieses Tool konvertiert `srt` Untertitel Dateien in das `vtt` Format.")
 uploaded_file = st.file_uploader("Datei hochladen", accept_multiple_files=False, type='srt')
 if uploaded_file:
