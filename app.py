@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_pdf_viewer import pdf_viewer
 import io
 
 def srt_to_vtt(srt_file):
@@ -14,8 +15,13 @@ def srt_to_vtt(srt_file):
 
 # Title
 st.title("Untertitel Konverter")
+with st.expander("Anleitung"):
+    st.subheader("Anleitung")
+    st.write("Dieses Dokument beschreibt die manuelle Umwandlung in Notepadd++.")
+    with open("SRTzuVTT_2024_11_22.pdf", "rb") as data:
+        pdf_content = data.read()
+        pdf_viewer(pdf_content, height=800)
 
-# Subtitle
 st.subheader("Konvertiere srt in vtt")
 st.write("Dieses Tool konvertiert `srt` Untertitel Dateien in das `vtt` Format.")
 uploaded_file = st.file_uploader("Datei hochladen", accept_multiple_files=False, type='srt')
