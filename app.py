@@ -1,6 +1,6 @@
 import streamlit as st
-from streamlit_pdf_viewer import pdf_viewer
 import io
+from streamlit_pdf_viewer import pdf_viewer
 
 def srt_to_vtt(srt_file):
     buffer_vtt = io.StringIO()
